@@ -87,8 +87,20 @@ header {
   color: var(--accent-color);
 }
 .site-nav .current {
+  position: relative;
   color: var(--accent-color);
 }
+.site-nav .current::after {
+  content: "";
+  position: absolute;
+width: 100%;
+height: 4px;
+bottom: 0;
+right: 0;
+background: #2196F3;
+border-radius: 2px;
+}
+
 .contacts {
   display: flex;
   align-items: center;
@@ -232,6 +244,27 @@ header {
 }
 .work-type .item + .item {
   margin-left: 30px;
+}
+.work-type-image {
+  position: relative;
+}
+.work-type-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
 }
 
 /* =====наша команда===== */
@@ -450,9 +483,26 @@ header {
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
+.example-image {
+  position: relative;
+}
+.example-image::before {
+  content: "";
+display: inline-block;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(33, 150, 243, 0.9);
+opacity: 0;
+}
+.example-image:hover:before {
+  opacity: 1;
+}
+
 .card-description {
   width: 370px;
-  /* height: 110px; */
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
