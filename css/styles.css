@@ -286,8 +286,7 @@ text-transform: uppercase;
   border-radius: 0px 0px 4px 4px;
 }
 .member-description {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 .member {
   margin-top: 0;
@@ -311,8 +310,6 @@ text-transform: uppercase;
 .social {
   display: flex;
   justify-content: space-between;
-  padding-left: 32px;
-  padding-right: 32px;
 }
 .social .icon {
   width: 44px;
