@@ -200,7 +200,7 @@ border-radius: 2px;
   background-color: rgba(0, 0, 0, 0.2);
 }
 .backdrop.is-hidden {
-  visibility: ;
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 
