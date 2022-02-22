@@ -480,22 +480,31 @@ text-transform: uppercase;
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
-.example-image {
+.overlay-image {
   position: relative;
 }
-.example-image::before {
+.overlay {
   content: "";
-display: inline-block;
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(33, 150, 243, 0.9);
-opacity: 0;
+  display: inline-block;
+  padding: 63px 24px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
 }
-.example-image:hover:before {
+.example-card:hover .overlay {
   opacity: 1;
+}
+.overlay-text {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.56;
+letter-spacing: 0.03em;
+color: var(--white-color);
+margin: 0;
 }
 
 .card-description {
@@ -516,7 +525,9 @@ opacity: 0;
 }
 .card-description .product {
   margin: 0;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  color: var(--phrase-color);
 }
