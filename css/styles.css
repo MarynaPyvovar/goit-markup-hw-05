@@ -191,6 +191,50 @@ border-radius: 2px;
   background-color: var(--background-btn-s);
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.backdrop.is-hidden {
+  visibility: ;
+  opacity: 0;
+  pointer-events: none;
+
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 528px;
+  min-height: 581px;
+  background-color: var(--white-color);
+}
+
+.button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--white-color);
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 8px;
+  padding: 8px;
+  }
+.close-x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: black;
+}
+
 /* =====наши преимущества===== */
 .section.benefits {
   padding-bottom: 0;
